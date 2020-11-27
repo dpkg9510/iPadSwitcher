@@ -1,0 +1,9 @@
+Package: com.dpkg.ipadswitcher
+Name: iPadSwitcher
+Version: 0.0.2
+Architecture: iphoneos-arm
+Description: Customizable iPad-like Grid Switcher.
+Maintainer: dpkg_
+Author: dpkg_
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

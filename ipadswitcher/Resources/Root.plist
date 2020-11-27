@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Options</string>
+		</dict>
+		<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<true/>
+				<key>defaults</key>
+				<string>com.dpkg.ipadswitcher</string>
+				<key>key</key>
+				<string>isEnabled</string>
+				<key>label</key>
+				<string>Enabled</string>
+				<key>PostNotification</key>
+				<string>com.dpkg.ipadswitcher.changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Card Size</string>
+		</dict>
+		<dict>
+<key>cell</key>
+<string>PSSegmentCell</string>
+<key>defaults</key>
+<string>com.dpkg.ipadswitcher</string>
+<key>key</key>
+<string>cardStyle</string>
+<key>label</key>
+<string>Card Style</string>
+<key>default</key>
+<string>0</string>
+<key>validTitles</key>
+<array>
+<string>Extra Small</string>
+<string>Small</string>
+<string>Medium</string>
+<string>Large</string>
+</array>
+<key>validValues</key>
+<array>
+<string>0</string>
+<string>1</string>
+<string>2</string>
+<string>3</string>
+</array>
+<key>id</key>
+<string>ModeCell</string>
+<key>PostNotification</key>
+<string>com.dpkg.ipadswitcher.changed</string>
+</dict>
+<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+	<key>footerText</key>
+	<string>Portrait Mode</string>
+</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Vertical Spacing</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<string>42</string>
+			<key>min</key>
+			<string>10</string>
+			<key>max</key>
+			<string>120</string>
+			<key>showValue</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.dpkg.ipadswitcher</string>
+			<key>key</key>
+			<string>vertSpacingPort</string>
+			<key>label</key>
+			<string>Vert Scale</string>
+			<key>leftImage</key>
+			<string>slidericon.png</string>
+			<key>isSegmented</key>
+			<false/>
+			<key>segmentCount</key>
+			<integer>10</integer>
+			<key>PostNotification</key>
+			<string>com.dpkg.ipadswitcher.changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Horizontal Spacing</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<string>25.5</string>
+			<key>min</key>
+			<string>10</string>
+			<key>max</key>
+			<string>120</string>
+			<key>showValue</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.dpkg.ipadswitcher</string>
+			<key>key</key>
+			<string>horizSpacingPort</string>
+			<key>label</key>
+			<string>Horz Scale</string>
+			<key>leftImage</key>
+			<string>slidericon.png</string>
+			<key>isSegmented</key>
+			<false/>
+			<key>segmentCount</key>
+			<integer>10</integer>
+			<key>PostNotification</key>
+			<string>com.dpkg.ipadswitcher.changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Landscape Mode</string>
+		</dict>
+				<dict>
+					<key>cell</key>
+					<string>PSGroupCell</string>
+					<key>label</key>
+					<string>Vertical Spacing</string>
+				</dict>
+				<dict>
+					<key>cell</key>
+					<string>PSSliderCell</string>
+					<key>default</key>
+					<string>38</string>
+					<key>min</key>
+					<string>10</string>
+					<key>max</key>
+					<string>120</string>
+					<key>showValue</key>
+					<true/>
+					<key>defaults</key>
+					<string>com.dpkg.ipadswitcher</string>
+					<key>key</key>
+					<string>vertSpacingLand</string>
+					<key>label</key>
+					<string>Vert Scale</string>
+					<key>leftImage</key>
+					<string>slidericon.png</string>
+					<key>isSegmented</key>
+					<false/>
+					<key>segmentCount</key>
+					<integer>10</integer>
+					<key>PostNotification</key>
+					<string>com.dpkg.ipadswitcher.changed</string>
+				</dict>
+				<dict>
+					<key>cell</key>
+					<string>PSGroupCell</string>
+					<key>label</key>
+					<string>Horizontal Spacing</string>
+				</dict>
+				<dict>
+					<key>cell</key>
+					<string>PSSliderCell</string>
+					<key>default</key>
+					<string>11.6</string>
+					<key>min</key>
+					<string>10</string>
+					<key>max</key>
+					<string>120</string>
+					<key>showValue</key>
+					<true/>
+					<key>defaults</key>
+					<string>com.dpkg.ipadswitcher</string>
+					<key>key</key>
+					<string>horizSpacingLand</string>
+					<key>label</key>
+					<string>Horz Scale</string>
+					<key>leftImage</key>
+					<string>slidericon.png</string>
+					<key>isSegmented</key>
+					<false/>
+					<key>segmentCount</key>
+					<integer>10</integer>
+					<key>PostNotification</key>
+					<string>com.dpkg.ipadswitcher.changed</string>
+				</dict>
+				<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+</dict>
+<dict>
+	<key>action</key>
+	<string>sbreload</string>
+	<key>cell</key>
+	<string>PSButtonCell</string>
+	<key>label</key>
+	<string>Apply Changes</string>
+</dict>
+<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+	<key>footerText</key>
+	<string>Check out my other tweaks :3</string>
+</dict>
+<dict>
+<key>cell</key>
+<string>PSGroupCell</string>
+</dict>
+<dict>
+	<key>cell</key>
+	<string>PSButtonCell</string>
+	<key>label</key>
+	<string>ArkromePro</string>
+	<key>icon</key>
+	<string>arkromepro.png</string>
+	<key>action</key>
+	<string>arkromePro</string>
+</dict>
+<dict>
+<key>cell</key>
+<string>PSGroupCell</string>
+</dict>
+<dict>
+	<key>cell</key>
+	<string>PSButtonCell</string>
+	<key>label</key>
+	<string>Dapple</string>
+	<key>icon</key>
+	<string>dapple.png</string>
+	<key>action</key>
+	<string>dappleTW</string>
+</dict>
+	</array>
+	<key>title</key>
+	<string>iPadSwitcher</string>
+</dict>
+</plist>

@@ -30,68 +30,41 @@ void ReloadPrefs () {
 
 %hook SBAppSwitcherSettings
 - (void)setGridSwitcherPageScale:(double)arg1 {
-	if (cardStyle == 0) {
-		arg1 = 0.30;
-		%orig;
-	}else if (cardStyle == 1) {
-		arg1 = 0.38;
-		%orig;
-	}else if (cardStyle == 2) {
-		arg1 = 0.4;
-		%orig;
-	}else if (cardStyle == 3) {
-		arg1 = 0.42;
-		%orig;
-	}
-}
-
-- (double)gridSwitcherPageScale {
-    return %orig;
+    switch(cardStyle){
+        case 0:
+            %orig(0.30);
+            break;
+        case 1:
+            %orig(0.38);
+            break;
+        case 2:
+            %orig(0.4);
+            break;
+        case 3:
+            %orig(0.42);
+            break;
+    }
 }
 
 - (void)setGridSwitcherHorizontalInterpageSpacingPortrait:(double)arg1 {
-    arg1 = horizSpacingPort;
-    %orig;
+    %orig(horizSpacingPort);
 }
 
 - (void)setGridSwitcherVerticalNaturalSpacingPortrait:(double)arg1 {
-    arg1 = vertSpacingPort;
-    %orig;
-}
-
-- (double)gridSwitcherHorizontalInterpageSpacingPortrait {
-    return %orig;
-}
-
-- (double)gridSwitcherVerticalNaturalSpacingPortrait {
-    return %orig;
+    %orig(vertSpacingPort);
 }
 
 - (void)setGridSwitcherHorizontalInterpageSpacingLandscape:(double)arg1 {
-    arg1 = horizSpacingLand;
-    %orig;
+    %orig(horizSpacingLand);
 }
 
 - (void)setGridSwitcherVerticalNaturalSpacingLandscape:(double)arg1 {
-    arg1 = vertSpacingLand;
-    %orig;
-}
-
-- (double)gridSwitcherHorizontalInterpageSpacingLandscape {
-    return %orig;
-}
-
-- (double)gridSwitcherVerticalNaturalSpacingLandscape {
-    return %orig;
+    %orig(vertSpacingLand);
 }
 
 - (void)setSwitcherStyle:(long long)arg1 {
-	if (isEnabled) {
-    arg1 = 2;
-    %orig;
-  }
+    if(isEnabled) %orig(2);
 }
-
 %end
 
 %ctor {

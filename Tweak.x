@@ -22,12 +22,6 @@ void ReloadPrefs () {
 
 }
 
-%hook SBGridSwitcherPersonality
-- (double)_gridSwitcherPageScale {
-    return %orig;
-}
-%end
-
 %hook SBAppSwitcherSettings
 - (void)setGridSwitcherPageScale:(double)arg1 {
     switch(cardStyle){
@@ -63,7 +57,8 @@ void ReloadPrefs () {
 }
 
 - (void)setSwitcherStyle:(long long)arg1 {
-    if(isEnabled) %orig(2);
+    if(isEnabled)
+		%orig(2);
 }
 %end
 

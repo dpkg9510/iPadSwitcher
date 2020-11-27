@@ -30,18 +30,18 @@ void ReloadPrefs () {
 
 %hook SBAppSwitcherSettings
 - (void)setGridSwitcherPageScale:(double)arg1 {
-	 if (cardStyle == 0) {
-			arg1 = 0.30;
-			%orig;
+	if (cardStyle == 0) {
+		arg1 = 0.30;
+		%orig;
 	}else if (cardStyle == 1) {
-			arg1 = 0.38;
-			%orig;
+		arg1 = 0.38;
+		%orig;
 	}else if (cardStyle == 2) {
-			arg1 = 0.4;
-			%orig;
+		arg1 = 0.4;
+		%orig;
 	}else if (cardStyle == 3) {
-			arg1 = 0.42;
-			%orig;
+		arg1 = 0.42;
+		%orig;
 	}
 }
 
